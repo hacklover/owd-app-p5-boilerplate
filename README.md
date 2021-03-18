@@ -1,4 +1,4 @@
-# p5.js boilerplate module for OWD Client
+# p5.js boilerplate for OWD Client
 > Start to draw on a canvas element with p5.js
 
 <p>
@@ -9,8 +9,11 @@
     <a href="https://hacklover.net/discord"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg" alt="Join us on Discord" /></a>
 </p>
 
-## Overview
-A starter module to begin using p5.js in a Open Web Desktop window.
+## Compatibility
+- Open Web Desktop client v2.0.0-alpha.5
+
+## Dependencies
+- p5
 
 ## License
 This project is released under the [MIT License](LICENSE)
