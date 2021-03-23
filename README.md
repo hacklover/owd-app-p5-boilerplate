@@ -9,6 +9,11 @@
     <a href="https://hacklover.net/discord"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg" alt="Join us on Discord" /></a>
 </p>
 
+## Quick install
+- Copy the content of the `client` module folder into `owd-client/src/modules/p5-boilerplate`
+- Install each module dependency manually with `npm install <dependency>`
+- Add the reference of this module into `owd-client/config/modules.json`
+
 ## Compatibility
 - Open Web Desktop client v2.0.0-alpha.5
 
