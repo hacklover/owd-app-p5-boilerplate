@@ -4,7 +4,7 @@ import {ModuleApp} from "@owd-client/core/index";
 import WindowSampleProcessing from "./windows/WindowSampleProcessing.vue";
 
 export default class SampleProcessingModule extends ModuleApp {
-  loadModule() {
+  setup() {
     return {
       name: "p5-boilerplate",
       singleton: true,
