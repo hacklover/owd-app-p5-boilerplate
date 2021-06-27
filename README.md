@@ -14,15 +14,46 @@
 </p>
 
 ## Quick install
-- Copy the content of the `client` module folder into `owd-client/src/modules/p5-boilerplate`
-- Install each module dependency manually with `npm install <dependency>`
-- Add the reference of this module into `owd-client/config/modules.json`
+- Move to your client folder, then
+  ```
+  # Enter modules app directory
+  cd src/modules/app/
+  
+  # Clone this repository
+  git clone https://github.com/hacklover/owd-app-p5-boilerplate p5-boilerplate
+  
+  # Install dependencies using Yarn, or Npm
+  yarn add p5
+  npm install p5
+  ```
+- Define this module in `owd-client/client.extensions.ts`
+  ```js
+  import AboutModule from "@owd-client/core/src/modules/app/about";
+  import DebugModule from "@owd-client/core/src/modules/app/debug";
+  import P5BoilerplateModule from "~/modules/app/p5-boilerplate/client";
 
-## Compatibility
-- Open Web Desktop client v2.0.0-beta
+  export default {
+    app: {
+      modules: [
+        AboutModule,
+        DebugModule,
+        P5BoilerplateModule,
+      ]
+    },
+    ...
+  ```
+- Add this code to `owd-client/vite.config.ts`
+  ```
+  optimizeDeps: {
+    include: ['p5']
+  }
+  ```
 
 ## Dependencies
 - p5
+
+## Compatibility
+- Open Web Desktop client v2.0.0-beta.1
 
 ## License
 This project is released under the [MIT License](LICENSE)
