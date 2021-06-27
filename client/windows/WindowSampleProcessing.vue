@@ -1,13 +1,12 @@
 <template>
-  <Window :window="props.window">
+  <WindowApp :window="props.window">
     <div :id="canvasContainerId" />
-  </Window>
+  </WindowApp>
 </template>
 
 <script setup>
 import p5 from "p5"
 import {ref, computed, defineProps, onMounted, onBeforeUnmount} from "vue";
-import Window from "@owd-client/core/src/components/window/app/WindowApp.vue";
 
 const instance = ref(null)
 const frameRate = ref(30)
