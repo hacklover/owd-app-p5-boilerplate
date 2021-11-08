@@ -6,13 +6,14 @@ import WindowSampleProcessing from "./windows/WindowSampleProcessing.vue";
 export default class SampleProcessingModule extends ModuleApp {
   setup() {
     return {
-      name: "p5-boilerplate",
+      name: "sample-p5",
       singleton: true,
       windows: [
         {
           component: WindowSampleProcessing,
           name: "WindowSampleProcessing",
-          title: "Sample with p5.js",
+          title: "Sample module / p5.js",
+          titleMenu: "Sample p5.js",
           icon: {
             name: "mdi-draw",
             size: "25px",
@@ -20,8 +21,6 @@ export default class SampleProcessingModule extends ModuleApp {
               y: -1
             }
           },
-          menu: true,
-          resizable: false,
           size: {
             width: 426,
             height: 462
