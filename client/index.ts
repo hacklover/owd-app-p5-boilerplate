@@ -15,7 +15,7 @@ export default class SampleProcessingModule extends ModuleApp {
           title: "Sample module / p5.js",
           titleMenu: "Sample p5.js",
           icon: {
-            name: "mdi-draw",
+            name: "mdi mdi-draw",
             size: "25px",
             offset: {
               y: -1
